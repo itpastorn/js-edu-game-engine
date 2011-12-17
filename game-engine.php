@@ -244,6 +244,7 @@ svgball.isMoving = function (toggle) {
     return svgball.moving;
 }
 
+// @todo Slider to change speed
 KXENGINE.setSpeed(200);
 KXENGINE.register(domball);
 KXENGINE.registerBackground(canvasgame);
