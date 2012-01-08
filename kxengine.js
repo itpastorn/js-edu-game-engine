@@ -25,6 +25,18 @@ if ( typeof mozRequestAnimationFrame !== "function") {
     throw new Error("Sorry, Firefox only during initial development");
 }
 
+// Shim by Paul Irish
+window.requestAnimFrame = (function(w){
+  return  w.requestAnimationFrame ||
+          w.webkitRequestAnimationFrame ||
+          w.mozRequestAnimationFrame ||
+          w.oRequestAnimationFrame ||
+          w.msRequestAnimationFrame ||
+          function(/* function FrameRequestCallback */ callback, /* DOMElement Element */ element){
+            w.setTimeout(callback, 1000 / 60);
+          };
+})(window);
+
 var KXENGINE = {
 
     // All moving objects that are handled by the engine goes here
@@ -228,3 +240,8 @@ Necessary properties on a background objects
 o.draw()       - Should clear (part of) the screen and draw background items
 o.backgroundid - to enable deRegister
 */
+
+// Check out
+// http://hacks.mozilla.org/2011/08/animating-with-javascript-from-setinterval-to-requestanimationframe/
+// http://jsfiddle.net/THEtheChad/RUsnb/ (no animation que - a good idea????)
+
