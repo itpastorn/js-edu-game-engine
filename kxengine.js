@@ -244,4 +244,4 @@ o.backgroundid - to enable deRegister
 // Check out
 // http://hacks.mozilla.org/2011/08/animating-with-javascript-from-setinterval-to-requestanimationframe/
 // http://jsfiddle.net/THEtheChad/RUsnb/ (no animation que - a good idea????)
-
+// http://billmill.org/static/canvastutorial/

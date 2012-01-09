@@ -17,3 +17,20 @@ The idea is to keep *deltas* so small between each movement, that all collision 
 
 Another method, that does no movements and no collision detection is responsible for painting stuff.
 That method uses - if available - requestAnimationFrame.
+
+Target games and applications
+-----------------------------
+
+Examples of stuff I expect my students to recreate:
+
+ * Pong
+ * Arkanoid
+ * Gorilla (Q-basic)
+ * Snake
+ * Whack-a-mole
+ * (Clay) Pigeon Shooting (Duck Hunt)
+ * Game and watch Donkey Kong
+ * A simple paint program
+ * Animated logos or abstract animations
+ * Charts and diagrams
+ 
