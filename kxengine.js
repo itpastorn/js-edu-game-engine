@@ -1,3 +1,6 @@
+/* jshint forin:true, eqnull:true, noarg:true, noempty:true, eqeqeq:true, strict:true,
+   undef:true, curly:true, browser:true, devel:true, es5:true, indent:4, maxerr:50, white:true */
+
 /**
  * Simple game flow engine for new programmers
  *

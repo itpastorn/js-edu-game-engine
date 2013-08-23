@@ -89,6 +89,9 @@
 <div id="log"></div>
 <script src="kxengine.js"></script>
 <script>
+/* jshint forin:true, eqnull:true, noarg:true, noempty:true, eqeqeq:true, strict:true,
+   undef:true, curly:true, browser:true, devel:true, es5:true, indent:4, maxerr:50, white:true */
+
 window.onerror = function (msg, url, line) {
     var log = document.getElementById("log");
     log.innerHTML = log.innerHTML += "<dl><dt>Error msg</dt><dd> " + msg + "</dd>\n";
